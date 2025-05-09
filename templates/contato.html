@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Contato{% endblock %}
+{% block content %}
+<h1>Formulário de Contato</h1>
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <div class="flash-messages">
+      {% for message in messages %}
+        <p style="color: lightgreen; background-color: #222; padding: 10px; border-radius: 5px; width: fit-content; margin: 10px auto;">
+          {{ message }}
+        </p>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
+
+<form method="post">
+    <input type="text" name="nome" placeholder="Seu nome" required>
+    <input type="email" name="email" placeholder="Seu e-mail" required>
+    <input type="text" name="assunto" placeholder="Assunto" required>
+    <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+    <input type="submit" value="Enviar">
+</form>
+{% endblock %}

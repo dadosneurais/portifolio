@@ -1,0 +1,177 @@
+body {
+    background-color: black;
+    color: #00ffa2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    background-image: url('/static/walk.gif');
+    background-size: 20%;
+    background-position: left bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+@keyframes moveRight {
+    0% {
+        background-position: -20% bottom;
+    }
+    100% {
+        background-position: 120% bottom;
+    }
+}
+body {
+    animation: moveRight 6.4s linear infinite;
+}
+
+
+
+header, nav {
+    background-color: darkslategrey;
+    padding: 10px 20px;
+    text-align: center;
+}
+nav a {
+    color: #f1f1f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    color: #00ffa2;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #2e2e42;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #00ffa2;
+    color: #1e1e2f;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+/* redes sociais */
+.social-icons {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Estiliza os ícones */
+.social-icon {
+    width: 80px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de hover para dar um feedback visual ao usuário */
+.social-icon:hover {
+    transform: scale(1.5);
+}
+
+.foto {
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    opacity: 0.8;
+    width: 250px;
+    border-radius: 50%;
+}
+.foto:hover {
+    transform: scale(1.1);
+}
+
+
+
+.project-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.project-list li {
+    background-color: #1e1e1e;
+    border-left: 4px solid #00b894;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: #dcdcdc;
+    font-family: 'Segoe UI', sans-serif;
+    transition: background-color 0.3s ease;
+    opacity: 0.9;
+}
+
+.project-list li:hover {
+    background-color: #2a2a2a;
+}
+
+.project-list a {
+    color: #00cec9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-list a:hover {
+    color: #81ecec;
+}
+
+
+
+h1 {
+    font-size: 2.5rem;
+    color: #00ffc3;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #cccccc;
+    text-align: justify;
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+}
+
+ul li {
+    color: #ffffff;
+    text-align: justify;
+    line-height: 1.8;
+    background-color: #2f4f4f;
+    opacity: 0.9;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+ul li:hover {
+    background-color: #3e6065;
+    transform: translateY(-3px);
+}
+
+
